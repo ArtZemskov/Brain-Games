@@ -7,7 +7,7 @@ const taskDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 export const isEven = (randomNumber) => randomNumber % 2 === 0;
 
-const getQuestionAndAnswer = () => {
+export const getQuestionAndAnswer = () => {
   const question = getRandomInteger(minNumber, maxNumber);
   const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
