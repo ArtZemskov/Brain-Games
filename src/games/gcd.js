@@ -5,7 +5,7 @@ const taskDescription = 'Find the greatest common divisor of given numbers.';
 const minNumber = 1;
 const maxNumber = 100;
 
-const getGcd = (num1, num2) => {
+export const getGcd = (num1, num2) => {
   const min = Math.min(num1, num2);
   const max = Math.max(num1, num2);
   let divisor = 0;
@@ -18,7 +18,7 @@ const getGcd = (num1, num2) => {
   return divisor;
 };
 
-const getQuestionAndAnswer = () => {
+export const getQuestionAndAnswer = () => {
   const firstNum = getRandomInteger(minNumber, maxNumber);
   const secondNum = getRandomInteger(minNumber, maxNumber);
   const question = `${firstNum} ${secondNum}`;
