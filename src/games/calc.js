@@ -5,7 +5,7 @@ const taskDescription = 'What is the result of the expression?';
 const minNumber = 1;
 const maxNumber = 25;
 
-const getCalc = (num1, num2, sign) => {
+export const getCalc = (num1, num2, sign) => {
   switch (sign) {
     case '+':
       return num1 + num2;
@@ -18,7 +18,7 @@ const getCalc = (num1, num2, sign) => {
   }
 };
 
-const getQuestionAndAnswer = () => {
+export const getQuestionAndAnswer = () => {
   const firstNum = getRandomInteger(minNumber, maxNumber);
   const secondNum = getRandomInteger(minNumber, maxNumber);
   const option = getRandomInteger(1, 3);
