@@ -1,4 +1,4 @@
-import { getCalc, getQuestionAndAnswer } from '../src/games/calc';
+import { getCalc, getQuestionAndAnswer } from '../src/games/calc.js';
 
 test('should return the calculation results', () => {
   expect(getCalc(9, 11, '+')).toBe(20);
