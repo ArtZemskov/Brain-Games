@@ -1,7 +1,11 @@
-import getRandomInteger from '../randomizer.js';
+import { getRandomInteger } from '../randomizer.js';
 import getGameLogic from '../index.js';
 
 const taskDescription = 'What number is missing in the progression?';
+const firstNum = 1;
+const secondNum = 50;
+const stepStart = 2;
+const stepEnd = 5;
 
 export const getProgression = (startNum, stepNum) => {
   const progressionSize = 10; // the number of elements of the progression
@@ -14,10 +18,10 @@ export const getProgression = (startNum, stepNum) => {
 };
 
 export const getQuestionAndAnswer = () => {
-  const start = getRandomInteger(1, 50);
-  const step = getRandomInteger(2, 5);
+  const start = getRandomInteger(firstNum, secondNum);
+  const step = getRandomInteger(stepStart, stepEnd);
   const progression = getProgression(start, step);
-  const randomIndex = Math.floor(Math.random() * progression.length);
+  const randomIndex = getRandomInteger(0, progression.length - 1);
   const answer = `${progression[randomIndex]}`;
   progression[randomIndex] = '..';
   const question = progression.join(' ');

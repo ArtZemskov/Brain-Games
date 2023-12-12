@@ -1,17 +1,8 @@
 const getRandomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-const getRandomSign = (option) => {
-  switch (option) {
-    case 1:
-      return '+';
-    case 2:
-      return '-';
-    case 3:
-      return '*';
-    default:
-      return null;
-  }
+const getRandomElement = (arr) => {
+  const randomIndex = getRandomInteger(0, arr.length - 1);
+  return arr[randomIndex];
 };
 
-export default getRandomInteger;
-export { getRandomSign };
+export { getRandomInteger, getRandomElement };

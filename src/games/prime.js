@@ -1,4 +1,4 @@
-import getRandomInteger from '../randomizer.js';
+import { getRandomInteger } from '../randomizer.js';
 import getGameLogic from '../index.js';
 import { isEven } from './even.js';
 
