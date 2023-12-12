@@ -12,7 +12,7 @@ Good luck! 😉
 
 How to download and use it?
 
-1. git clone git@github.com:ArtZemskov/frontend-project-44.git
+1. git clone git@github.com:ArtZemskov/Brain-Games.git
 2. npm ci
 3. Start each game with the appropriate command below:
    
